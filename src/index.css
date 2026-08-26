@@ -1,0 +1,52 @@
+/*
+  Deliberate single-look design: a navy-and-orange poster/bottle-cap
+  treatment pulled from the Bodega19 logo, painted explicitly rather
+  than switching with the viewer's OS theme.
+*/
+:root {
+  --bg: #ffffff;
+  --navy: #0f2748;
+  --surface: #f7f1e3;
+  --surface-2: #efe6cf;
+  --line: #e3d8bc;
+  --orange: #ff6a1e;
+  --orange-deep: #de4a00;
+  --blue: #003c84;
+  --blue-deep: #022a5e;
+  --text: #10233f;
+  --muted: #667089;
+  --shadow: 0 10px 26px -18px rgba(15, 39, 72, 0.35);
+  --focus: #ff6a1e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fff8ec 0%, #ffffff 28%, #ffffff 68%, #fff4e0 100%);
+  color: var(--text);
+  font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}

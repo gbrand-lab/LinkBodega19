@@ -1,0 +1,50 @@
+/* Fine dot-grid texture, poster-print feel. */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(rgba(15, 39, 72, 0.16) 1.3px, transparent 1.3px);
+  background-size: 20px 20px;
+  mask-image: radial-gradient(ellipse 95% 85% at 50% 25%, black 0%, transparent 82%);
+  opacity: 0.8;
+}
+
+/*
+  Three soft ambient blobs pinned to the viewport: warm orange top-left
+  (Vista Mar), brand blue top-right (Golden Shopping), and a faint amber
+  wash grounding the bottom of the screen.
+*/
+.glow {
+  position: fixed;
+  top: -160px;
+  left: -160px;
+  width: 620px;
+  height: 520px;
+  background: radial-gradient(closest-side, rgba(255, 106, 30, 0.32), transparent 72%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glowBlue {
+  position: fixed;
+  top: -160px;
+  right: -180px;
+  width: 620px;
+  height: 520px;
+  background: radial-gradient(closest-side, rgba(0, 60, 132, 0.26), transparent 72%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glowWarm {
+  position: fixed;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 680px;
+  height: 480px;
+  background: radial-gradient(closest-side, rgba(255, 196, 122, 0.3), transparent 74%);
+  pointer-events: none;
+  z-index: 0;
+}
