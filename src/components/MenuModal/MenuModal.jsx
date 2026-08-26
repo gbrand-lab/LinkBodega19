@@ -1,10 +1,15 @@
+import { useState } from 'react'
 import { CloseIcon } from '../icons/Icons'
 import './MenuModal.css'
 
 // Full menu preview shown over the page: the menu art is a plain image
 // served from /public, so people never leave the Linktree to read it.
+// Clicking the image toggles a zoomed-in view (scrollable via the
+// surrounding .frame) for reading small print.
 // Renders nothing while no menu is open.
 export default function MenuModal({ menuItem, onClose }) {
+  const [zoomed, setZoomed] = useState(false)
+
   if (!menuItem) return null
 
   return (
@@ -22,8 +27,13 @@ export default function MenuModal({ menuItem, onClose }) {
             <CloseIcon />
           </button>
         </div>
-        <div className="frame">
-          <img src={menuItem.image} alt={menuItem.title} />
+        <div className={`frame${zoomed ? ' zoomedFrame' : ''}`}>
+          <img
+            src={menuItem.image}
+            alt={menuItem.title}
+            className={zoomed ? 'zoomed' : undefined}
+            onClick={() => setZoomed((value) => !value)}
+          />
         </div>
         <div className="foot">
           <a href={menuItem.image} target="_blank" rel="noopener noreferrer">

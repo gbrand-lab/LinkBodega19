@@ -76,6 +76,17 @@
   display: block;
   width: 100%;
   height: auto;
+  cursor: zoom-in;
+}
+
+.zoomedFrame {
+  overflow: auto;
+}
+
+.frame img.zoomed {
+  width: 220%;
+  max-width: none;
+  cursor: zoom-out;
 }
 
 .foot {

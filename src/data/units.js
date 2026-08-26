@@ -16,9 +16,8 @@ export const units = [
         "https://www.google.com/maps?q=R.+Quarenta%2C+0+-+Ponta+D%27Areia%2C+S%C3%A3o+Luis+-+MA&output=embed",
     },
     hours: [
-      { day: 'Seg a Qui', time: '18h às 00h' },
-      { day: 'Sex e Sáb', time: '18h às 02h' },
-      { day: 'Domingo', time: '12h às 22h' },
+      { day: 'Ter a Sáb', time: '11h às 22h' },
+      { day: 'Domingo', time: '11h às 18h' },
     ],
     ifoodUrl:
       'https://www.ifood.com.br/delivery/sao-luis-ma/bodega19---vista-mar-ponta-dareia/48dc8c65-c032-4c38-831c-47579231e9e7',

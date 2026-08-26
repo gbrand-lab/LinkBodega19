@@ -20,7 +20,7 @@ export default function App() {
           ))}
         </div>
       </div>
-      <MenuModal menuItem={openMenuItem} onClose={closeMenu} />
+      <MenuModal key={openMenuItem?.image} menuItem={openMenuItem} onClose={closeMenu} />
     </>
   )
 }
