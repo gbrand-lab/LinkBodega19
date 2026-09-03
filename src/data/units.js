@@ -16,6 +16,7 @@ export const units = [
         "https://www.google.com/maps?q=R.+Quarenta%2C+0+-+Ponta+D%27Areia%2C+S%C3%A3o+Luis+-+MA&output=embed",
     },
     hours: [
+      { day: 'Segunda', time: 'Fechado' },
       { day: 'Ter a Sáb', time: '11h às 22h' },
       { day: 'Domingo', time: '11h às 18h' },
     ],
@@ -34,6 +35,12 @@ export const units = [
         title: 'Menu Happy Hour',
         subtitle: 'Promoções e petiscos do dia',
         image: '/Cardapio_Happy_Vistamar.png',
+      },
+      {
+        icon: 'menu',
+        title: 'Menu Executivo',
+        subtitle: 'Terça a quinta, 11h às 22h',
+        image: '/Cardapio_Menu_Executivo.png',
       },
     ],
   },
@@ -58,6 +65,12 @@ export const units = [
         title: 'Cardápio Bodega19',
         subtitle: 'Menu completo da unidade Golden Shopping',
         image: '/Cardapio_Golden.jpg',
+      },
+      {
+        icon: 'menu',
+        title: 'Menu Executivo',
+        subtitle: 'Terça a quinta, 11h às 22h',
+        image: '/Cardapio_Menu_Executivo.png',
       },
     ],
   },
