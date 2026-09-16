@@ -56,7 +56,7 @@ export default function UnitSection({ unit, onOpenMenu }) {
         <p className="sectionLabel">Cardápios</p>
         <MenuCardList>
           {unit.menus.map((menu) => (
-            <MenuCard key={menu.image} menu={menu} onOpen={onOpenMenu} />
+            <MenuCard key={menu.title} menu={menu} onOpen={onOpenMenu} />
           ))}
         </MenuCardList>
       </div>

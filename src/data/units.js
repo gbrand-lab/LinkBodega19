@@ -9,11 +9,10 @@ export const units = [
     name: 'Vista Mar',
     accent: 'orange',
     address: {
-      label: "R. Quarenta, 0 · Ponta D'Areia",
+      label: "R. Astrolábio, 20A · Ponta D'Areia",
       mapsUrl:
-        "https://www.google.com/maps/search/?api=1&query=R.+Quarenta%2C+0+-+Ponta+D%27Areia%2C+S%C3%A3o+Luis+-+MA",
-      mapsEmbedUrl:
-        "https://www.google.com/maps?q=R.+Quarenta%2C+0+-+Ponta+D%27Areia%2C+S%C3%A3o+Luis+-+MA&output=embed",
+        "https://www.google.com/maps/search/?api=1&query=R.+Astrol%C3%A1bio%2C+20A+-+Ponta+D%27Areia%2C+S%C3%A3o+Luis+-+MA",
+      mapsEmbedUrl: "https://www.google.com/maps?cid=17377254542620206727&output=embed",
     },
     hours: [
       { day: 'Segunda', time: 'Fechado' },
@@ -28,7 +27,7 @@ export const units = [
         icon: 'menu',
         title: 'Cardápio Bodega19',
         subtitle: 'Menu completo da unidade Vista Mar',
-        image: '/Cardapio_Vistamar_Frente.jpg',
+        images: ['/Cardapio_Vistamar_Frente.png', '/Cardapio_Vistamar_Bebidas.png'],
       },
       {
         icon: 'clock',
@@ -64,13 +63,19 @@ export const units = [
         icon: 'menu',
         title: 'Cardápio Bodega19',
         subtitle: 'Menu completo da unidade Golden Shopping',
-        image: '/Cardapio_Golden.jpg',
+        images: ['/Cardapio_Golden_Frente.png', '/Cardapio_Golden_Bebidas.png'],
+      },
+      {
+        icon: 'clock',
+        title: 'Menu Happy Hour',
+        subtitle: 'Segunda a segunda, 15h às 20h',
+        images: ['/Cardapio_Happy_Golden_1.png', '/Cardapio_Happy_Golden_2.png'],
       },
       {
         icon: 'menu',
         title: 'Menu Executivo',
-        subtitle: 'Terça a quinta, 11h às 22h',
-        image: '/Cardapio_Menu_Executivo.png',
+        subtitle: 'Segunda a quinta, 11h às 21h · R$69,90',
+        image: '/Cardapio_Menu_Executivo_Golden.png',
       },
     ],
   },

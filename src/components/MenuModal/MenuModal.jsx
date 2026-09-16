@@ -12,6 +12,8 @@ export default function MenuModal({ menuItem, onClose }) {
 
   if (!menuItem) return null
 
+  const images = menuItem.images ?? [menuItem.image]
+
   return (
     <div
       className="overlay"
@@ -28,17 +30,22 @@ export default function MenuModal({ menuItem, onClose }) {
           </button>
         </div>
         <div className={`frame${zoomed ? ' zoomedFrame' : ''}`}>
-          <img
-            src={menuItem.image}
-            alt={menuItem.title}
-            className={zoomed ? 'zoomed' : undefined}
-            onClick={() => setZoomed((value) => !value)}
-          />
+          {images.map((src) => (
+            <img
+              key={src}
+              src={src}
+              alt={menuItem.title}
+              className={zoomed ? 'zoomed' : undefined}
+              onClick={() => setZoomed((value) => !value)}
+            />
+          ))}
         </div>
         <div className="foot">
-          <a href={menuItem.image} target="_blank" rel="noopener noreferrer">
-            Abrir em nova guia
-          </a>
+          {images.map((src, index) => (
+            <a key={src} href={src} target="_blank" rel="noopener noreferrer">
+              {images.length > 1 ? `Abrir página ${index + 1} em nova guia` : 'Abrir em nova guia'}
+            </a>
+          ))}
         </div>
       </div>
     </div>

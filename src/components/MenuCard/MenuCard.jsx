@@ -3,11 +3,12 @@ import './MenuCard.css'
 // One menu entry. Clicking it opens the in-page viewer (see MenuModal)
 // instead of navigating away to Google Drive.
 export function MenuCard({ menu, onOpen }) {
+  const thumbnail = menu.image ?? menu.images?.[0]
   return (
     <button
       type="button"
       className="card"
-      style={menu.image ? { backgroundImage: `url(${menu.image})` } : undefined}
+      style={thumbnail ? { backgroundImage: `url(${thumbnail})` } : undefined}
       onClick={() => onOpen(menu)}
     >
       <span className="cardGlow" aria-hidden="true" />
