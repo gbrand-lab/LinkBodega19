@@ -88,21 +88,3 @@
   max-width: none;
   cursor: zoom-out;
 }
-
-.foot {
-  padding: 9px 16px;
-  background: var(--surface);
-  border-top: 1px solid var(--line);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.foot a {
-  font-size: 0.74rem;
-  font-weight: 700;
-  color: var(--muted);
-  text-decoration: underline;
-}

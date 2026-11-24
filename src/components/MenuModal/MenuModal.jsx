@@ -40,13 +40,6 @@ export default function MenuModal({ menuItem, onClose }) {
             />
           ))}
         </div>
-        <div className="foot">
-          {images.map((src, index) => (
-            <a key={src} href={src} target="_blank" rel="noopener noreferrer">
-              {images.length > 1 ? `Abrir página ${index + 1} em nova guia` : 'Abrir em nova guia'}
-            </a>
-          ))}
-        </div>
       </div>
     </div>
   )
